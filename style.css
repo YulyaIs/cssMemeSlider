@@ -1,0 +1,146 @@
+body {
+    box-sizing: border-box;
+
+}
+
+
+.container {
+    background-color: burlywood;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.slider {
+    max-width: 54rem;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.slider-items {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-items .item {
+    width: 20%;
+}
+
+.slider-items .item img {
+    width: 100%;
+    height: 34rem;
+}
+
+.slider-items input {
+    display: none;
+}
+
+.text-slider {
+    width: 54rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-nav {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+
+.slider-nav input {
+    display: none;
+}
+
+
+.slider-nav .text h3 {
+    width: 100%;
+    height: auto;
+}
+
+.labels {
+    width: 20%;
+    height: 3rem;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+}
+
+label:hover {
+    background-color: pink;
+}
+
+label {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+
+.labels1 {
+    width: 20%;
+    height: 3rem;
+    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+}
+
+label1 {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: indianred;
+    border-radius: 50%;
+
+}
+
+#c1:checked ~ .c1 {
+    margin-left: 0%;
+}
+#c2:checked ~ .c1 {
+    margin-left: -20%;
+}
+#c3:checked ~ .c1 {
+    margin-left: -40%;
+}
+#c4:checked ~ .c1 {
+    margin-left: -60%;
+}
+#c5:checked ~ .c1 {
+    margin-left: -80%;
+}
+
+
+#t1:checked ~ .t1 {
+    margin-left: 0%;
+}
+#t2:checked ~ .t1 {
+    margin-left: -200%;
+}
+#t3:checked ~ .t1 {
+    margin-left: -400%;
+}
+#t4:checked ~ .t1 {
+    margin-left: -600%;
+}
+#t5:checked ~ .t1 {
+    margin-left: -800%;
+}
+/* probnik*/
+
+
+
