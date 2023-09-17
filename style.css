@@ -1,0 +1,154 @@
+body {
+    box-sizing: border-box;
+
+}
+
+
+.container {
+    background-color: burlywood;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.slider {
+    max-width: 60%;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.slider-items {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-items .item {
+    width: 20%;
+    transition: all .6s ease;
+}
+
+.slider-items .item img {
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    display: none;
+}
+
+.text-slider {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.slider-nav {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+
+    
+}
+.text {
+    width: 100%;
+    height: auto;
+    transition: all .6s ease;
+    white-space: nowrap ;
+
+}
+
+h3 {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    width: 20%;
+    height: 4.5rem;
+    background-color:burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+label {
+    width: 1.3rem;
+    height: 1.3rem;
+    cursor: pointer;
+    background-color: gray;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: burlywood;
+    
+
+}
+
+label:hover,
+#c1:checked ~ .controls label:nth-of-type(1),
+#c2:checked ~ .controls label:nth-of-type(2),
+#c3:checked ~ .controls label:nth-of-type(3),
+#c4:checked ~ .controls label:nth-of-type(4),
+#c5:checked ~ .controls label:nth-of-type(5) {
+	background: coral;
+    opacity: 1;
+}
+
+label:active {
+    background-color: rgb(101, 4, 4);
+    opacity: 1;
+}
+
+
+
+#c1:checked ~ .slider-items .c1 {
+    margin-left: 0%;
+}
+#c2:checked ~ .slider-items .c1 {
+    margin-left: -20%;
+}
+#c3:checked ~ .slider-items .c1 {
+    margin-left: -40%;
+}
+#c4:checked ~ .slider-items .c1 {
+    margin-left: -60%;
+}
+#c5:checked ~ .slider-items .c1 {
+    margin-left: -80%;
+}
+
+
+#c1:checked ~ .text-slider .slider-nav .c1{
+    margin-left: -0%;
+}
+#c2:checked ~ .text-slider .slider-nav .c1 {
+    margin-left: -100%;
+}
+#c3:checked ~ .text-slider .slider-nav .c1 {
+    margin-left: -200%;
+}
+#c4:checked ~ .text-slider .slider-nav .c1 {
+    margin-left: -300%;
+}
+#c5:checked ~ .text-slider .slider-nav .c1 {
+    margin-left: -400%;
+}
+
+
+  
+
+
