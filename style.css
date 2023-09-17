@@ -6,7 +6,7 @@ body {
 
 .container {
     background-color: burlywood;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
 
 
 .slider {
-    max-width: 54rem;
+    max-width: 60%;
     height: auto;
     overflow: hidden;
 
@@ -31,11 +31,12 @@ body {
 
 .slider-items .item {
     width: 20%;
+    transition: all .6s ease;
 }
 
 .slider-items .item img {
     width: 100%;
-    height: 34rem;
+    height: 100%;
 }
 
 .slider-items input {
@@ -43,10 +44,10 @@ body {
 }
 
 .text-slider {
-    width: 54rem;
     height: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .slider-nav {
@@ -72,9 +73,11 @@ body {
 .labels {
     width: 20%;
     height: 3rem;
-    background-color: blueviolet;
+    background-color:burlywood;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 
 label:hover {
@@ -125,7 +128,7 @@ label1 {
 }
 
 
-#t1:checked ~ .t1 {
+#t1:checked ~ .slider-nav .t1 {
     margin-left: 0%;
 }
 #t2:checked ~ .t1 {
@@ -134,13 +137,14 @@ label1 {
 #t3:checked ~ .t1 {
     margin-left: -400%;
 }
-#t4:checked ~ .t1 {
+#c4:checked ~ .t1 {
     margin-left: -600%;
 }
-#t5:checked ~ .t1 {
+#c5:checked ~ .t1 {
     margin-left: -800%;
 }
 /* probnik*/
 
+  
 
 
