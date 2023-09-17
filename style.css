@@ -59,18 +59,17 @@ body {
     overflow: hidden;
     
 }
-
-.slider-nav input {
-    display: none;
-}
-
-
-.slider-nav .text h3 {
+.text {
     width: 100%;
     height: auto;
 }
 
-.labels {
+h3 {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
     width: 20%;
     height: 3rem;
     background-color:burlywood;
@@ -80,9 +79,6 @@ body {
 
 }
 
-label:hover {
-    background-color: pink;
-}
 
 label {
     width: 1.5rem;
@@ -90,26 +86,23 @@ label {
     cursor: pointer;
     background-color: black;
     border-radius: 50%;
+    opacity: 0.5;
 
 }
 
-
-.labels1 {
-    width: 20%;
-    height: 3rem;
-    background-color: coral;
-    display: flex;
-    justify-content: space-between;
+label:hover,
+#c1:checked ~ .controls label:nth-of-type(1),
+#c2:checked ~ .controls label:nth-of-type(2),
+#c3:checked ~ .controls label:nth-of-type(3),
+#c4:checked ~ .controls label:nth-of-type(4),
+#c5:checked ~ .controls label:nth-of-type(5) {
+	background: coral;
+    opacity: 1;
 }
 
-label1 {
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    background-color: indianred;
-    border-radius: 50%;
 
-}
+
+
 
 #c1:checked ~ .c1 {
     margin-left: 0%;
@@ -128,22 +121,22 @@ label1 {
 }
 
 
-#t1:checked ~ .slider-nav .t1 {
+#c1:checked ~ .text-slider .slider-nav h3:nth-child(1){
     margin-left: 0%;
 }
-#t2:checked ~ .t1 {
+#c2:checked ~ .text-slider .slider-nav h3:nth-child(2) {
     margin-left: -200%;
 }
-#t3:checked ~ .t1 {
+#c3:checked ~ .slider-nav > .c1 {
     margin-left: -400%;
 }
-#c4:checked ~ .t1 {
+#c4:checked ~ .slider-nav > .c1 {
     margin-left: -600%;
 }
-#c5:checked ~ .t1 {
+#c5:checked ~ .slider-nav > .c1 {
     margin-left: -800%;
 }
-/* probnik*/
+
 
   
 
